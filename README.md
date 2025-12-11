@@ -34,6 +34,28 @@ Follow these steps to get the project running locally.
 - npm (or yarn)
 - A PostgreSQL database instance (We are using Supabase)
 
+# ----------------------------------------------------------------------
+
+# Database Configuration for Deployment/Remote Connection (REQUIRED)
+
+# ----------------------------------------------------------------------
+
+# NOTE: Replace [YOUR_PASSWORD] with your actual, secure database password.
+
+# The URL should include any necessary URL encoding (e.g., # becomes %23).
+
+DATABASE_URL="postgresql://postgres:[YOUR_PASSWORD]@db.[YOUR_SUPABASE_HOST].supabase.co:5432/postgres"
+
+# ----------------------------------------------------------------------
+
+# Application Configuration
+
+# ----------------------------------------------------------------------
+
+# Port where the Express server will listen
+
+PORT=3000
+
 ### 1. Clone the Repository
 
 ```bash
