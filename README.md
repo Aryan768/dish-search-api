@@ -1,2 +1,3 @@
 # dish-search-api
-Searching dishes across restaurants with order-based ranking and price filtering..
+
+Searching dishes across restaurants with order-based ranking and price filtering...
