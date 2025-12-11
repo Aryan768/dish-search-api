@@ -1,0 +1,39 @@
+{
+  "name": "dish-search-api",
+  "version": "1.0.0",
+  "description": "Searching dishes across restaurants with order-based ranking and price filtering..",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "dev": "ts-node-dev src/index.ts",
+    "typeorm": "typeorm-ts-node-commonjs",
+    "migration:create": "npm run typeorm migration:create -- -n",
+    "migration:run": "npm run typeorm migration:run -- -d ./src/data-source.ts",
+    "migration:revert": "npm run typeorm migration:revert -- -d ./src/data-source.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aryan768/dish-search-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aryan768/dish-search-api/issues"
+  },
+  "homepage": "https://github.com/Aryan768/dish-search-api#readme",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "pg": "^8.16.3",
+    "reflect-metadata": "^0.2.2",
+    "typeorm": "^0.3.28"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.0.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.3"
+  }
+}
